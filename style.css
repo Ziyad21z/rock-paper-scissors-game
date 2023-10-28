@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    border-bottom: 5px solid rgb(248, 160, 47);
+    display: flex;
+    justify-content: center;
+}
+.game{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.player-buttons{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+height: 500px;
+align-items: center;
+gap: 10px;
+}
+input[type=button]{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 16px;
+    width: 90px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color:rgb(248, 160, 47);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid rgb(248, 160, 47);
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
