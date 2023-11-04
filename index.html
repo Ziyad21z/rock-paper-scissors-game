@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAME</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>open the console</h1>
-    <h4>the first to 5 win</h4>
-    <script src="script.js"></script>
+    <div class="header">
+        <h1>rock paper scissors</h1>
+        <h4 id="top-text">the first to 5 win</h4>
+        <div class="score">
+            <p id="player-score">player: 0</p>
+            <p id="computer-score">computer: 0</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <input type="button" value="ROCK" id="rock" onclick="getPlayerChoice('rock')">
+        <input type="button" value="PAPER" id="paper" onclick="getPlayerChoice('paper')">
+        <input type="button" value="SCISSORS" id="scissors" onclick="getPlayerChoice('scissors')">
+    </div>
+    <div class="footer">
+        
+    </div>
 </body>
 
 </html>
