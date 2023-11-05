@@ -10,6 +10,14 @@ body {
     text-transform: uppercase;
 }
 
+#player-score {
+    color: green;
+}
+
+#computer-score {
+    color: red;
+}
+
 .score {
     display: flex;
     gap: 48px;
@@ -31,7 +39,7 @@ input[type=button] {
     font-weight: bolder;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;

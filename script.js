@@ -11,10 +11,17 @@ const footerDiv = document.querySelector('.footer')
 
 
 function gameHistory(historyText) {
-const historyPara = document.createElement('p')
-historyPara.className = ''
-historyPara.textContent = historyText;
-footerDiv.appendChild(historyPara);
+    const historyPara = document.createElement('p')
+    historyPara.textContent = historyText;
+    footerDiv.appendChild(historyPara);
+    if (playerScore === 5) {
+        alert('you won the game will restart now')
+        history.go();
+    }
+    if (computerScore === 5) {
+        alert('you lose the game will restart now');
+        history.go();
+    }
 }
 
 function getComputerChoice() {
@@ -25,14 +32,6 @@ function getComputerChoice() {
 function getPlayerChoice(choise) {
     let playerSelection = choise;
     let computerSelection = getComputerChoice();
-    if (playerScore === 5) {
-        alert('you won the game will restart now')
-        history.go();
-    }
-    if (computerScore === 5) {
-        alert('you lose the game will restart now');
-        history.go();
-    }
     playRound(playerSelection, computerSelection);
     round++;
 }
